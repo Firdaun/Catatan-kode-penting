@@ -1,4 +1,5 @@
 // ===== Kode untuk di terminal ===== //
+desc = blok kode ini pernah di gunakan untuk menghitung file dataGift.json di commit sebelum ca16545 yaitu 8859c4e
 
 git show HEAD~1:dataGift.json | node -e "
 const data = JSON.parse(require('fs').readFileSync(0, 'utf-8'));
