@@ -1,0 +1,7 @@
+// ===== Kode untuk di terminal ===== //
+
+git show HEAD~1:dataGift.json | node -e "
+const data = JSON.parse(require('fs').readFileSync(0, 'utf-8'));
+console.log('Total item:', data.length);
+console.log('Per harga:', data.reduce((acc, i) => { acc[i.price] = (acc[i.price]||0)+1; return acc }, {}));
+"
