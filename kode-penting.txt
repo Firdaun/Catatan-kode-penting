@@ -18,3 +18,10 @@ console.log('Per harga:', data.reduce((acc, i) => { acc[i.price] = (acc[i.price]
 
 // ===== timeout satu baris ===== //
 await new Promise(r => setTimeout(r, 1000));
+
+
+
+// ===== kode untuk membaca file yang ada ===== //
+desc = kode ini di gunakan untuk membaca file json yang isinya array dan menghitung jumlah arraynya
+
+node -e 'const data = require("./temp.json"); console.log("Total item:", data.length)'
